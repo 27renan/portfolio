@@ -1,0 +1,65 @@
+.container {
+  height: 100%;
+  /* background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(37, 97, 207, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  background-image: url("../../../assets/portfolio.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  opacity: 0.75;
+}
+
+@keyframes animacaoSignIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.form {
+  width: 30rem;
+  margin: auto;
+  background-color: rgb(235, 235, 235);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  animation-name: animacaoSignIn;
+  animation-duration: 2s;
+}
+
+.title {
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.full-width {
+  width: 95%;
+}
+
+button {
+  margin-bottom: 2.5rem;
+}
+
+.mat-icon {
+  opacity: 0.6;
+}
+
+.camposValidos {
+  background-color: rgb(22, 177, 22);
+  color: white;
+}
