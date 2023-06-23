@@ -5,3 +5,6 @@ O projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) v
 ## Development server
 
 Execute `ng serve` para iniciar a aplicação e navegue até `http://localhost:4200/`.
+
+## Autenticação
+Para realizar login basta inserir um e-mail valido e uma senha, coloquei essa funcionalidade para projetger as rotas.
