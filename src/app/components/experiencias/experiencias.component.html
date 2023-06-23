@@ -1,0 +1,49 @@
+<div>
+  <mat-radio-group color="primary" (change)="radioButtonOnChange($event)">
+    <mat-radio-button value="todas" [checked]="true">Todas</mat-radio-button>
+    <mat-radio-button value="2018">2018</mat-radio-button>
+    <mat-radio-button value="2021">2021</mat-radio-button>
+    <mat-radio-button value="2022">2022</mat-radio-button>
+    <mat-radio-button value="2023">2023</mat-radio-button>
+    <mat-radio-button value="2024">2024</mat-radio-button>
+  </mat-radio-group>
+
+  <div>
+    <div *ngFor="let exp of expFiltradas" class="exp">
+      <i class="material-symbols-outlined"> business_center </i>
+      <div>
+        <div class="info">
+          <h2>Empresa:</h2>
+          <h4>{{ exp.empresa }}.</h4>
+        </div>
+        <div class="info">
+          <h2>Cargo:</h2>
+          <h4>{{ exp.cargo }}.</h4>
+        </div>
+        <div class="info">
+          <h2>Local:</h2>
+          <h4>{{ exp.local }}.</h4>
+        </div>
+        <div class="info">
+          <h2>Período:</h2>
+          <h4>
+            {{ exp.periodo.inicioMes }}/{{ exp.periodo.inicioAno }} a
+            {{ exp.periodo.finalMes }}/{{ exp.periodo.finalAno }}
+          </h4>
+        </div>
+        <div class="info">
+          <h2>Atribuições:</h2>
+          <h4>{{ exp.atribuicoes }}</h4>
+        </div>
+        <div class="info info_tecnologia">
+          <h2>Tecnologias:</h2>
+          <h4>{{ exp.tecnologias }}.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="expFiltradas.length === 0" class="nenhumaEmpresa">
+    <h3>Nenhuma empresa encontrada...</h3>
+  </div>
+</div>
