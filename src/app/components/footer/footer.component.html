@@ -1,0 +1,8 @@
+<footer>
+  <div *ngIf="contact" class="contato">
+    <h2>{{ contact.subject_matter }}</h2>
+    <h3>{{ contact.contact.name }}</h3>
+    <h3>E-mail: {{ contact.contact.email }}</h3>
+    <h3>Telefone: {{ contact.contact.tel }}</h3>
+  </div>
+</footer>

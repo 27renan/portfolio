@@ -1,0 +1,53 @@
+<app-header [logado]="logado" (logout)="sairConta()"></app-header>
+<div class="content">
+  <div class="perfil">
+    <div class="row_info_pessoais">
+      <img src="../../../assets/foto_perfil.jpg" alt="perfil" />
+      <div class="info">
+        <h1 class="name">Renan de Oliveira Reginaldo</h1>
+        <h3 class="profession">Desenvolvedor Front End</h3>
+        <h3 class="city">Barbacena, Minas Gerais, Brasil</h3>
+        <h4 class="mobile">(32) 98479-8380 (Mobile)</h4>
+        <h4 class="email">oliveira.reginaldor@gmail.com (E-mail)</h4>
+      </div>
+    </div>
+
+    <div class="row_resumo">
+      <h2>Resumo:</h2>
+      <h4>
+        Sou formado em Ciência da Computação pela Universidade Federalde Ouro
+        Preto, participei do projeto Feedplus, projeto que consisteno
+        desenvolvimento de um aplicativo de feedback para atletasde vôlei com o
+        objetivo de melhorar a performance dos atletas,usando conceitos de
+        Mobile Learning e IHC (Interação Humano- Computador). Projeto realizado
+        no laboratório GAID (grupo deanálise e inteligência de dados) da UFOP.
+        Tenho conhecimento emReact, Angular, Django, JavaScript, HTML5, CSS e
+        banco de dadosMySQL.
+      </h4>
+    </div>
+
+    <div class="row_git">
+      <h2>Link(Github):</h2>
+      <a href="https://github.com/27renan" target="_blank"
+        >https://github.com/27renan</a
+      >
+    </div>
+
+    <div class="row_experiencias">
+      <h2>Experiências</h2>
+      <app-experiencias [experiencias]="experiencias"></app-experiencias>
+    </div>
+
+    <div class="row_formacao">
+      <h2>Formação:</h2>
+      <div class="info_row_formacao">
+        <i class="material-symbols-outlined"> school </i>
+        <div>
+          <h3>Universidade Federal de Ouro Preto</h3>
+          <h3>Bacharelado, Ciência da Computação · (2014 - 2019)</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,54 @@
+mat-radio-button {
+  padding-right: 15px;
+}
+
+.material-symbols-outlined {
+  margin-right: 10px;
+  font-size: 1.6rem;
+}
+.exp {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  text-align: justify;
+  box-shadow: 2px 12px 5px -11px rgba(0, 0, 0, 0.75);
+}
+
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.exp .info {
+  display: flex;
+  align-items: baseline;
+}
+
+.exp .info h4 {
+  margin-left: 10px;
+}
+
+.info_tecnologia {
+  margin-bottom: 15px;
+}
+
+.nenhumaEmpresa {
+  margin-top: 1rem;
+}
+
+@media (max-width: 376px) {
+  mat-radio-button {
+    margin-top: 6px;
+    margin-right: 5px;
+    padding-right: 0px;
+  }
+
+  .exp .info {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
+}
