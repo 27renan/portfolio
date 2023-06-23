@@ -1,3 +1,14 @@
+@keyframes animacaoSignIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .content {
   width: 100%;
   height: auto;
@@ -18,6 +29,8 @@
   display: flex;
   align-items: flex-start;
   margin-top: 0.5rem;
+  animation-name: animacaoSignIn;
+  animation-duration: 2s;
 }
 
 .info {
@@ -47,6 +60,8 @@ img {
   margin-top: 0;
   padding-top: 2rem;
   padding-left: 156px;
+  animation-name: animacaoSignIn;
+  animation-duration: 2s;
 }
 
 .row_resumo h2 {
@@ -72,6 +87,8 @@ img {
   margin-top: 0;
   padding-top: 2rem;
   padding-left: 156px;
+  animation-name: animacaoSignIn;
+  animation-duration: 2s;
 }
 
 .row_git h2 {
@@ -101,12 +118,16 @@ img {
   margin-top: 0;
   padding-top: 2rem;
   padding-left: 156px;
+  animation-name: animacaoSignIn;
+  animation-duration: 2s;
 }
 
 .row_formacao {
   margin-top: 0;
   padding-top: 1rem;
   padding-left: 156px;
+  animation-name: animacaoSignIn;
+  animation-duration: 2s;
 }
 
 .row_formacao h2 {
@@ -136,4 +157,58 @@ img {
 .material-symbols-outlined {
   margin-right: 10px;
   font-size: 1.6rem;
+}
+
+@media (max-width: 376px) {
+  .row_info_pessoais {
+    height: auto;
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    animation-name: animacaoSignIn;
+    animation-duration: 2s;
+  }
+
+  .info {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row_resumo {
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-left: 0px;
+    animation-name: animacaoSignIn;
+    animation-duration: 2s;
+  }
+
+  .row_git {
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-left: 0px;
+    animation-name: animacaoSignIn;
+    animation-duration: 2s;
+  }
+
+  .row_experiencias {
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-left: 0px;
+    animation-name: animacaoSignIn;
+    animation-duration: 2s;
+  }
+
+  .row_formacao {
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-left: 0px;
+    animation-name: animacaoSignIn;
+    animation-duration: 2s;
+  }
 }

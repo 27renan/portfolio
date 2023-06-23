@@ -75,9 +75,9 @@ export class HomeComponent implements OnInit, OnDestroy {
         inicioMes: 'Agosto',
         finalMes: 'Janeiro'
       },
-      atribuicoes: 'Fui monitor da disciplina Interação Humano - Computador, área dacomputação que' +
+      atribuicoes: 'Fui monitor da disciplina Interação Humano-Computador, área dacomputação que' +
         'envolve a interação entre pessoas (usuários) eequipamentos computacionais desenvolvendo métodos e' +
-        'ferramentas paradesign, criação, implementação e manutenção de sistemas computacionaisadequados' +
+        'ferramentas paradesign, criação, implementação e manutenção de sistemas computacionais adequados' +
         'ao uso humano. Como monitor da disciplina foi responsávelpor participar e dar suporte aos' +
         'alunos durante todo processo de criação edesenvolvimento (levantamento de requisitos,' +
         'metáforas, personas, modelode tarefas, modelo de interação, modelo de dados, cenário de' +

@@ -1,7 +1,4 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
-// import { ToastrService } from 'ngx-toastr';
-import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -12,10 +9,7 @@ export class HeaderComponent implements OnInit {
   @Input() logado: boolean;
   @Output() logout = new EventEmitter();
 
-  constructor(
-    private router: Router,
-    private authService: AuthService
-  ) { }
+  constructor() { }
 
   ngOnInit(): void { }
 

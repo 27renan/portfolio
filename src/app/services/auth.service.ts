@@ -12,10 +12,6 @@ export class AuthService {
     sessionStorage.setItem('logado', 'true');
   }
 
-  // successfulLogin(authToken: string) {
-  //   localStorage.setItem('token', authToken);
-  // }
-
   isAuthenticated() {
     let logado = sessionStorage.getItem('logado')
     if (logado === 'true') {
